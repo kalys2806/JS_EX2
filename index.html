@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Библиотека</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Библиотека</h1>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="title">Название книги:</label>
+                <input type="text" class="form-control" id="title" required />
+            </div>
+            <div class="form-group">
+                <label for="author">Автор:</label>
+                <input type="text" class="form-control" id="author" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить</button>
+        </form>
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Автор</th>
+                    <th>Прочитано</th>
+                    <th>Количество книг</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="bookList"></tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
